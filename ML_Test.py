@@ -14,7 +14,7 @@ for symbol in symbols:
     print(f"Processing {symbol}...")
 
     # Download historical data for desired ticker symbol 
-    data = yf.download(symbol,'2020-01-01','2021-01-01')
+    data = yf.download(symbol,'2000-01-01','2023-06-16')
 
     # Use only Close price for prediction
     data = data[['Close']]
